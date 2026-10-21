@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chicxulub Drive : un outil personnel de téléchargement et de vérification de paquets de fichiers depuis Google Drive vers un PC.">
+  <title>Chicxulub Drive — Présentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header><a class="brand" href="index.html">Chicxulub Drive</a><nav aria-label="Navigation principale"><a href="index.html" aria-current="page">Accueil</a><a href="privacy.html">Confidentialité</a></nav></header>
+  <main id="contenu">
+    <p class="eyebrow">Outil personnel · Exécution sur PC</p>
+    <h1>Des paquets de fichiers, de Drive à votre PC.</h1>
+    <p class="lead">Chicxulub Drive permet de sélectionner, télécharger et vérifier des paquets ZIP destinés au travail local sur le projet Chicxulub.</p>
+    <section aria-labelledby="fonctionnement"><h2 id="fonctionnement">Fonctionnement</h2>
+      <p>L’importeur local utilise rclone pour consulter le dossier Drive choisi, habituellement « Livraisons ». Il présente les candidats ZIP par nom, identifiant et taille. Si plusieurs paquets sont présents, une sélection explicite est nécessaire.</p>
+      <p>Le paquet choisi est téléchargé dans un cache sur le PC. Son empreinte SHA-256 et le contenu de son manifeste sont contrôlés. La vérification ou la simulation d’import n’intègre aucun fichier au jeu ; l’import local est une commande distincte.</p>
+    </section>
+    <aside><h2>Un accès en lecture seule</h2><p>L’autorisation Google <code>drive.readonly</code> permet de lire et télécharger les fichiers de tout le Drive. Le dossier choisi limite le fonctionnement de l’importeur, pas la portée de cette autorisation. L’importeur n’écrit pas dans Drive et ne modifie pas le partage des fichiers.</p></aside>
+    <section aria-labelledby="site"><h2 id="site">À propos de ce site</h2><p>Ces pages présentent l’outil et ses pratiques de confidentialité. Elles n’accèdent pas à Drive et ne proposent pas de connexion Google. Elles ne contiennent ni le code du jeu ni ses assets.</p><p>Projet personnel maintenu sous le compte GitHub <strong>Shirirubboy</strong>.</p><p><a class="action" href="privacy.html">Lire les règles de confidentialité →</a></p></section>
+  </main>
+  <footer>Chicxulub Drive · Information sur l’outil personnel</footer>
+</body>
+</html>
